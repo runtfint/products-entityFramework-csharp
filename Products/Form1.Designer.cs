@@ -28,53 +28,53 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
-            button1 = new Button();
-            textBox1 = new TextBox();
+            ProductDataGridView = new DataGridView();
+            AddProductButton = new Button();
+            productNameText = new TextBox();
             label1 = new Label();
             label2 = new Label();
-            textBox2 = new TextBox();
-            dateTimePicker1 = new DateTimePicker();
+            productQuantityText = new TextBox();
+            productDateSelect = new DateTimePicker();
             label3 = new Label();
-            comboBox1 = new ComboBox();
+            sortingComboBox = new ComboBox();
             label4 = new Label();
             label5 = new Label();
-            textBox3 = new TextBox();
+            searchByNumberText = new TextBox();
             label6 = new Label();
-            dateTimePicker2 = new DateTimePicker();
-            button2 = new Button();
-            button3 = new Button();
-            textBox4 = new TextBox();
+            searchByDateSelect = new DateTimePicker();
+            wipeDateButton = new Button();
+            DeleteProductButton = new Button();
+            changeProductQuantityText = new TextBox();
             label7 = new Label();
-            button4 = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            UpdateProductButton = new Button();
+            ((System.ComponentModel.ISupportInitialize)ProductDataGridView).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // ProductDataGridView
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 12);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(727, 323);
-            dataGridView1.TabIndex = 0;
+            ProductDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            ProductDataGridView.Location = new Point(12, 12);
+            ProductDataGridView.Name = "ProductDataGridView";
+            ProductDataGridView.RowTemplate.Height = 25;
+            ProductDataGridView.Size = new Size(727, 323);
+            ProductDataGridView.TabIndex = 0;
             // 
-            // button1
+            // AddProductButton
             // 
-            button1.Location = new Point(745, 174);
-            button1.Name = "button1";
-            button1.Size = new Size(197, 45);
-            button1.TabIndex = 1;
-            button1.Text = "Добавить товар";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            AddProductButton.Location = new Point(745, 174);
+            AddProductButton.Name = "AddProductButton";
+            AddProductButton.Size = new Size(197, 45);
+            AddProductButton.TabIndex = 1;
+            AddProductButton.Text = "Добавить товар";
+            AddProductButton.UseVisualStyleBackColor = true;
+            AddProductButton.Click += button1_Click;
             // 
-            // textBox1
+            // productNameText
             // 
-            textBox1.Location = new Point(745, 27);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(197, 23);
-            textBox1.TabIndex = 2;
+            productNameText.Location = new Point(745, 27);
+            productNameText.Name = "productNameText";
+            productNameText.Size = new Size(197, 23);
+            productNameText.TabIndex = 2;
             // 
             // label1
             // 
@@ -94,20 +94,20 @@
             label2.TabIndex = 5;
             label2.Text = "Остаток на складе";
             // 
-            // textBox2
+            // productQuantityText
             // 
-            textBox2.Location = new Point(745, 134);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(197, 23);
-            textBox2.TabIndex = 4;
-            textBox2.TextChanged += textBox2_TextChanged;
+            productQuantityText.Location = new Point(745, 134);
+            productQuantityText.Name = "productQuantityText";
+            productQuantityText.Size = new Size(197, 23);
+            productQuantityText.TabIndex = 4;
+            productQuantityText.TextChanged += textBox2_TextChanged;
             // 
-            // dateTimePicker1
+            // productDateSelect
             // 
-            dateTimePicker1.Location = new Point(745, 81);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(200, 23);
-            dateTimePicker1.TabIndex = 6;
+            productDateSelect.Location = new Point(745, 81);
+            productDateSelect.Name = "productDateSelect";
+            productDateSelect.Size = new Size(200, 23);
+            productDateSelect.TabIndex = 6;
             // 
             // label3
             // 
@@ -118,15 +118,15 @@
             label3.TabIndex = 8;
             label3.Text = "Срок годности";
             // 
-            // comboBox1
+            // sortingComboBox
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Алфавиту", "Длине названия", "Много на складе", "Мало на складе" });
-            comboBox1.Location = new Point(12, 370);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(213, 23);
-            comboBox1.TabIndex = 9;
-            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            sortingComboBox.FormattingEnabled = true;
+            sortingComboBox.Items.AddRange(new object[] { "Алфавиту", "Длине названия", "Много на складе", "Мало на складе" });
+            sortingComboBox.Location = new Point(12, 370);
+            sortingComboBox.Name = "sortingComboBox";
+            sortingComboBox.Size = new Size(213, 23);
+            sortingComboBox.TabIndex = 9;
+            sortingComboBox.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // label4
             // 
@@ -146,13 +146,13 @@
             label5.TabIndex = 11;
             label5.Text = "Поиск по номеру";
             // 
-            // textBox3
+            // searchByNumberText
             // 
-            textBox3.Location = new Point(248, 370);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(231, 23);
-            textBox3.TabIndex = 12;
-            textBox3.TextChanged += textBox3_TextChanged;
+            searchByNumberText.Location = new Point(248, 370);
+            searchByNumberText.Name = "searchByNumberText";
+            searchByNumberText.Size = new Size(231, 23);
+            searchByNumberText.TabIndex = 12;
+            searchByNumberText.TextChanged += textBox3_TextChanged;
             // 
             // label6
             // 
@@ -163,40 +163,40 @@
             label6.TabIndex = 13;
             label6.Text = "Поиск по дате";
             // 
-            // dateTimePicker2
+            // searchByDateSelect
             // 
-            dateTimePicker2.Location = new Point(508, 370);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(200, 23);
-            dateTimePicker2.TabIndex = 15;
-            dateTimePicker2.ValueChanged += dateTimePicker2_ValueChanged;
+            searchByDateSelect.Location = new Point(508, 370);
+            searchByDateSelect.Name = "searchByDateSelect";
+            searchByDateSelect.Size = new Size(200, 23);
+            searchByDateSelect.TabIndex = 15;
+            searchByDateSelect.ValueChanged += dateTimePicker2_ValueChanged;
             // 
-            // button2
+            // wipeDateButton
             // 
-            button2.Location = new Point(508, 399);
-            button2.Name = "button2";
-            button2.Size = new Size(131, 23);
-            button2.TabIndex = 16;
-            button2.Text = "Сбросить дату";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            wipeDateButton.Location = new Point(508, 399);
+            wipeDateButton.Name = "wipeDateButton";
+            wipeDateButton.Size = new Size(131, 23);
+            wipeDateButton.TabIndex = 16;
+            wipeDateButton.Text = "Сбросить дату";
+            wipeDateButton.UseVisualStyleBackColor = true;
+            wipeDateButton.Click += button2_Click;
             // 
-            // button3
+            // DeleteProductButton
             // 
-            button3.Location = new Point(748, 415);
-            button3.Name = "button3";
-            button3.Size = new Size(197, 23);
-            button3.TabIndex = 17;
-            button3.Text = "Удалить товар";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            DeleteProductButton.Location = new Point(748, 415);
+            DeleteProductButton.Name = "DeleteProductButton";
+            DeleteProductButton.Size = new Size(197, 23);
+            DeleteProductButton.TabIndex = 17;
+            DeleteProductButton.Text = "Удалить товар";
+            DeleteProductButton.UseVisualStyleBackColor = true;
+            DeleteProductButton.Click += button3_Click;
             // 
-            // textBox4
+            // changeProductQuantityText
             // 
-            textBox4.Location = new Point(745, 274);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(197, 23);
-            textBox4.TabIndex = 18;
+            changeProductQuantityText.Location = new Point(745, 274);
+            changeProductQuantityText.Name = "changeProductQuantityText";
+            changeProductQuantityText.Size = new Size(197, 23);
+            changeProductQuantityText.TabIndex = 18;
             // 
             // label7
             // 
@@ -207,68 +207,68 @@
             label7.TabIndex = 19;
             label7.Text = "Изменить количество";
             // 
-            // button4
+            // UpdateProductButton
             // 
-            button4.Location = new Point(745, 303);
-            button4.Name = "button4";
-            button4.Size = new Size(197, 23);
-            button4.TabIndex = 20;
-            button4.Text = "Изменить";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
+            UpdateProductButton.Location = new Point(745, 303);
+            UpdateProductButton.Name = "UpdateProductButton";
+            UpdateProductButton.Size = new Size(197, 23);
+            UpdateProductButton.TabIndex = 20;
+            UpdateProductButton.Text = "Изменить";
+            UpdateProductButton.UseVisualStyleBackColor = true;
+            UpdateProductButton.Click += button4_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(954, 450);
-            Controls.Add(button4);
+            Controls.Add(UpdateProductButton);
             Controls.Add(label7);
-            Controls.Add(textBox4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(dateTimePicker2);
+            Controls.Add(changeProductQuantityText);
+            Controls.Add(DeleteProductButton);
+            Controls.Add(wipeDateButton);
+            Controls.Add(searchByDateSelect);
             Controls.Add(label6);
-            Controls.Add(textBox3);
+            Controls.Add(searchByNumberText);
             Controls.Add(label5);
             Controls.Add(label4);
-            Controls.Add(comboBox1);
+            Controls.Add(sortingComboBox);
             Controls.Add(label3);
-            Controls.Add(dateTimePicker1);
+            Controls.Add(productDateSelect);
             Controls.Add(label2);
-            Controls.Add(textBox2);
+            Controls.Add(productQuantityText);
             Controls.Add(label1);
-            Controls.Add(textBox1);
-            Controls.Add(button1);
-            Controls.Add(dataGridView1);
+            Controls.Add(productNameText);
+            Controls.Add(AddProductButton);
+            Controls.Add(ProductDataGridView);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ProductDataGridView).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
-        private Button button1;
-        private TextBox textBox1;
+        private DataGridView ProductDataGridView;
+        private Button AddProductButton;
+        private TextBox productNameText;
         private Label label1;
         private Label label2;
-        private TextBox textBox2;
-        private DateTimePicker dateTimePicker1;
+        private TextBox productQuantityText;
+        private DateTimePicker productDateSelect;
         private Label label3;
-        private ComboBox comboBox1;
+        private ComboBox sortingComboBox;
         private Label label4;
         private Label label5;
-        private TextBox textBox3;
+        private TextBox searchByNumberText;
         private Label label6;
-        private DateTimePicker dateTimePicker2;
-        private Button button2;
-        private Button button3;
-        private TextBox textBox4;
+        private DateTimePicker searchByDateSelect;
+        private Button wipeDateButton;
+        private Button DeleteProductButton;
+        private TextBox changeProductQuantityText;
         private Label label7;
-        private Button button4;
+        private Button UpdateProductButton;
     }
 }
